@@ -1,8 +1,10 @@
-# app-habitos
+# app-habitos-azure
 
-Aplicación móvil para crear y mantener hábitos durante 21 días consecutivos con interfaz minimalista tipo iOS. Cuando completes un hábito durante 21 días seguidos, se marca como adquirido y se agrega a tu historial personal.
+Versión **cloud** de la aplicación de hábitos con integración de servicios Azure (App Service, Notification Hubs, Cosmos DB). Proyecto para clase de "Computo en la Nube".
 
-**Stack:** React Native + Expo + TypeScript + Supabase + Vitest
+**Versión iOS:** Consulta [app-habitos](https://github.com/RoxanaBarrios/app-habitos) para la versión minimalista sin cloud.
+
+**Stack:** React Native + Expo + TypeScript + Azure Services + Cosmos DB/SQL Server
 
 ## 🚀 Configuración inicial
 
@@ -43,7 +45,22 @@ Luego presiona:
 - `a` para Android (requiere emulador)
 - `i` para iOS (requiere Mac)
 
-## 📋 Características principales
+## 🎯 Características a implementar (Azure)
+
+### Backend
+- **Azure App Service** - Host de API REST para lógica de negocio
+- **Cosmos DB / SQL Server** - Base de datos cloud escalable
+- **Azure Authentication** - Alternativa a Supabase Auth
+
+### Notificaciones
+- **Azure Notification Hubs** - Sistema de push notifications
+- **Recordatorios diarios** - Notificaciones para completar hábitos
+
+### Analytics & Monitoring
+- **Application Insights** - Monitoreo y diagnósticos
+- **Azure Functions** - Procesamiento de eventos (jobs de rachas)
+
+---
 
 ✅ **Crear hábitos** con nombre, descripción, categoría y color personalizable
 ✅ **Racha individual** - Contador de días consecutivos completados por hábito
